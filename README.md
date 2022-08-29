@@ -3,13 +3,11 @@
 
 [ME Analyzer News Feed](https://twitter.com/platomaniac)
 
-[ME Analyzer Discussion Topic](https://www.win-raid.com/t840f39-ME-Analyzer-Intel-Engine-Firmware-Analysis-Tool-Discussion.html)
+[ME Analyzer Discussion Topic](https://winraid.level1techs.com/t/me-analyzer-intel-engine-firmware-analysis-tool-discussion/30876)
 
-[Intel Engine/Graphics/Independent Firmware Introduction](https://www.win-raid.com/t596f39-Intel-Converged-Security-Management-Engine-Drivers-Firmware-and-Tools.html)
+[Intel Engine/Graphics/Independent Firmware Introduction](https://winraid.level1techs.com/t/intel-converged-security-management-engine-drivers-firmware-and-tools/30719)
 
-[Intel Engine/Graphics/Independent Firmware Repositories](https://www.win-raid.com/t832f39-Intel-CS-ME-CS-TXE-CS-SPS-GSC-PMC-PCHC-PHY-amp-OROM-Firmware-Repositories.html)
-
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DJDZD3PRGCSCL"><img border="0" title="ME Analyzer Donation via Paypal or Debit/Credit Card" alt="ME Analyzer Donation via Paypal or Debit/Credit Card" src="https://user-images.githubusercontent.com/11527726/109392268-e0f68280-7923-11eb-83d8-0a63f0d20783.png"></a>
+[Intel Engine/Graphics/Independent Firmware Repositories](https://winraid.level1techs.com/t/intel-cs-me-cs-txe-cs-sps-gsc-pmc-pchc-phy-orom-firmware-repositories/30869)
 
 ![](https://i.imgur.com/PoUD96g.png)
 
@@ -26,7 +24,7 @@ ME Analyzer is a tool which parses Intel Engine, Intel Graphics and their Indepe
 - USB Type C Physical - PHY
 - Graphics Option ROM - OROM
 
-It can be used by end-users who are looking for all relevant firmware information such as Family, Version, Release, Type, Date, SKU, Platform, Size, Updated/Outdated, Health Status etc. ME Analyzer is also a powerful Engine / Graphics / Independent firmware research analysis tool with multiple structures which allow, among others, full parsing and unpacking of Converged Security Engine (CSE) & Graphics System Controller (GSC) Code and File Systems such as:
+It can be used by end-users who are looking for all relevant firmware information such as Family, Version, Release, Type, Date, SKU, Platform, Size, Health Status etc. ME Analyzer is also a powerful Engine / Graphics / Independent firmware research analysis tool with multiple structures which allow, among others, full parsing and unpacking of Converged Security Engine (CSE) & Graphics System Controller (GSC) Code and File Systems such as:
 
 - Flash Partition Table - FPT
 - Boot Partition Descriptor Table - BPDT/IFWI
@@ -39,20 +37,18 @@ Moreover, with the help of its extensive databases, ME Analyzer is capable of un
 
 #### **A1. ME Analyzer Features**
 
-- Supports all Engine firmware Families (CSE/ME: ME, TXE, SPS etc)
-- Supports all Graphics firmware Families (GSC: DG1, DG2, ATS etc)
-- Supports CSE/GSC Independent (IUP) firmware Families (PMC, OROM etc)
+- Supports Engine firmware Families ME 2-16, TXE 0-4 and SPS 1-6
+- Supports Graphics firmware Families GSC DG1 and DG2
+- Supports CSE/GSC Independent (IUP) firmware Families PMC, PCHC, PHY and OROM
 - Detection of Firmware Details (Family, Version, SKU, Date, Platform etc)
 - Detection of Firmware Release (Production, Pre-Production, ROM-Bypass etc)
-- Detection of Firmware Type (Region, Extracted, Recovery, Update etc)
+- Detection of Firmware Type (Region, Extracted, Update etc)
 - Detection of Firmware Security/Update Version Numbers (SVN, VCN etc)
 - Detection of Power Management Controller (PMC) Independent firmware info
 - Detection of PCH Configuration (PCHC) Independent firmware info
 - Detection of USB Type C Physical (PHY) Independent firmware info
 - Detection of Graphics Option ROM (OROM) Independent firmware info
-- Detection of imported Engine/Graphics firmware Updated/Outdated Status
-- Detection of unusual Engine/Graphics firmware (Corrupted, Compressed etc)
-- Ability to fully unpack all supported CSE, GSC and/or IUP/OROM firmware
+- Ability to fully unpack all supported CSE, GSC and/or IUP firmware
 - Ability to validate Engine/Graphics/IUP RSA Signature and Checksums
 - Advanced detection & validation of Engine/Graphics/IUP firmware Size
 - Ability to detect & analyze Integrated Firmware Images (IFWI/BPDT)
@@ -68,7 +64,7 @@ Moreover, with the help of its extensive databases, ME Analyzer is capable of un
 
 #### **A2. Engine Firmware Repository Database**
 
-ME Analyzer allows end-users and/or researchers to quickly analyze and/or report new firmware versions without the use of special Intel tools (FIT/FITC, FWUpdate) or Hex Editors. To do that effectively, a database had to be built. The [Intel Engine/Graphics/Independent Firmware Repositories](https://www.win-raid.com/t832f39-Intel-CS-ME-CS-TXE-CS-SPS-GSC-PMC-PCHC-PHY-amp-OROM-Firmware-Repositories.html) is a collection of every (CS)ME, (CS)TXE, (CS)SPS, GSC, PMC, PCHC, PHY & OROM firmware we have found. Its existence is very important for ME Analyzer as it allows us to continue doing research, find new types of firmware, compare same major version releases for similarities, check for updated firmware etc. Bundled with ME Analyzer is a file called MEA.dat which is required for the program to run. It includes entries for all Engine / Graphics / Independent firmware that are available to us. This accommodates primarily three actions: a) Detect each firmware's Family via unique identifier keys, b) Check whether the imported firmware is up to date and c) Help find new Engine firmware sooner by reporting them at the [Intel (Converged Security) Management Engine: Drivers, Firmware and Tools](https://www.win-raid.com/t596f39-Intel-Converged-Security-Management-Engine-Drivers-Firmware-and-Tools.html) or [Intel (Converged Security) Trusted Execution Engine: Drivers, Firmware and Tools](https://www.win-raid.com/t624f39-Intel-Trusted-Execution-Engine-Drivers-Firmware-amp-System-Tools.html) threads respectively.
+ME Analyzer allows end-users and/or researchers to quickly analyze and/or report new firmware versions without the use of special Intel tools (FIT/FITC, FWUpdate) or Hex Editors. To do that effectively, a database had to be built. The [Intel Engine/Graphics/Independent Firmware Repositories](https://winraid.level1techs.com/t/intel-cs-me-cs-txe-cs-sps-gsc-pmc-pchc-phy-orom-firmware-repositories/30869) is a collection of every (CS)ME, (CS)TXE, (CS)SPS, GSC, PMC, PCHC, PHY & OROM firmware we have found. Its existence is very important for ME Analyzer as it allows us to continue doing research, find new types of firmware, compare same major version releases for similarities etc. Bundled with ME Analyzer is a file called MEA.dat which is required for the program to run. It includes entries for all Engine / Graphics / Independent firmware that are available to us. This accommodates primarily two actions: a) Detect each firmware's Family via unique identifier keys and b) Help find new Engine firmware sooner by reporting them at the [Intel (Converged Security) Management Engine: Drivers, Firmware and Tools](https://winraid.level1techs.com/t/intel-converged-security-management-engine-drivers-firmware-and-tools/30719) or [Intel (Converged Security) Trusted Execution Engine: Drivers, Firmware and Tools](https://winraid.level1techs.com/t/intel-converged-security-trusted-execution-engine-drivers-firmware-and-tools/30730) threads respectively.
 
 ## **B. How to use ME Analyzer**
 
@@ -205,6 +201,3 @@ Some Anti-Virus software may claim that the built/frozen/compiled MEA executable
 ![](https://i.imgur.com/d5nzMSE.png)
 
 ![](https://i.imgur.com/UlMy3u6.png)
-
-###### _Donate Button Card Image: [Credit and Loan Pack](https://flaticon.com/free-icon/credit-card_3898076) by **Freepik** under Flaticon license_
-###### _Donate Button Paypal Image: [Credit Cards Pack](https://flaticon.com/free-icon/paypal_349278) by **Freepik** under Flaticon license_
